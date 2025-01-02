@@ -1,0 +1,240 @@
+body{
+    background-color: #005F73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+h1{
+    text-shadow: 5px 5px 5px rosybrown;
+
+}
+
+
+.main{
+    margin-top: 5rem;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    padding: 0;
+    filter: drop-shadow(10px 10px 10px black);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.main:hover{
+    filter: drop-shadow(10px 10px 100px black);
+    width: 735px;
+    height: 525px;
+}
+
+
+
+/* LOGIN */
+
+
+.login{
+    height:100%;
+    background-color: #94D2BD;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    display: inline-block;
+    flex-direction: column;
+    transition-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.login .loginForm , .singUp .singUpForm{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login .loginForm h1, .singUp .singUpForm h1{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.login .loginForm .username , .singUp .singUpForm .username{
+    width: 352px;
+    height: 54px;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: #E9D8A6;
+    color: #001219;
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 0 0.5rem;    
+    text-align: center;
+    filter: drop-shadow(4px 4px 6px black);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.login .loginForm .username:hover{
+    filter: drop-shadow(4px 4px 14px black);
+    
+}
+
+.login .loginForm .username::placeholder,  .singUp .singUpForm .username::placeholder{
+    color: #001219;
+    opacity: 0.8;
+}
+
+.login .loginForm .password , .singUp .singUpForm .password{
+    width: 352px;
+    height: 29px;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: #E9D8A6;
+    color: #001219;
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 0 0.5rem;
+    text-align: center;
+    filter: drop-shadow(4px 4px 6px black);
+    
+}
+
+.login .loginForm .password::placeholder,  .singUp .singUpForm .password::placeholder{
+    color: #001219;
+    opacity: 0.8;
+
+}
+
+
+.login .loginForm .button,  .singUp .singUpForm .button{
+    padding: 0;
+    background-color: #CA6702;
+    width: 105px;
+    height: 48px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: 0;
+    filter: drop-shadow(0px 4px 6px black);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.login .loginForm .button:hover, .singUp .singUpForm .button:hover{
+    width: 120px;
+    height: 60px;
+    font-size: 25px;
+    filter: drop-shadow(10px 10px 40px black);
+}
+
+
+
+.login .loginForm .button:active, .singUp .singUpForm .button:active{
+    background-color: #CA6702;
+    opacity: 0.7;
+
+}
+
+
+.login:hover, .singUp:hover{
+
+    
+    animation-name: pageSize;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+
+}
+
+.singUp:hover{
+    animation-name: pageSize;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+
+
+span{
+    padding: 0;
+    margin-top: 2rem;
+    height: 48px;
+    display: flex;
+    
+    border-radius: 50px;
+    
+}
+
+
+/* SING UP */
+
+
+.singUp{
+    height: 100%;
+    width: 20%;
+    background-color: #0A9396;
+    display: inline-block;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    transition-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+
+
+/* Animetion */
+
+.singUpDiv{
+    display: inline-block;
+}
+
+
+
+
+
+#hid{
+    display: none;
+}
+
+#animation{
+    
+}
+
+
+.cur{
+    
+    width: 80%;
+}
+
+.cur2{
+    width: 20%;
+}
+
+.deaf{
+    width: 50%;
+}
+
+
+@keyframes page {
+    from{
+        width: 20%;
+    }
+    to{
+        width: 80%
+    }
+}
+
+
+
+.bodyRed{
+    background-color: red;
+}
